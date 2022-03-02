@@ -51,6 +51,7 @@ header {
 	text-align: center;
     justify-content: center;
     flex-flow: row wrap;
+	width: 100%;
 }
 
 header h1 {
@@ -101,11 +102,7 @@ header nav ul li a{
 	border-bottom: 3px solid #77a466;
 }
 
-.main-title {
-
-}
 .main-title h2 {
-	text-align: center;
 	padding: 5px 0;
 	color: #77a466;
 }
@@ -161,12 +158,23 @@ footer span {
 }
 @media all and (min-width:768px) {
     /* Tablet styles here */
-	.bottom-section {
+.bottom-section {
 		display: flex;
 		justify-content: center;
 		flex-wrap: nowrap;
-		align-items: center;
+		align-items: flex-start;
 	}
+
+	.section-two h3,
+	.section-three h3 {
+		padding-left: 30px;
+	}
+
+	.section-two { 
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
 }
  
 @media all and (min-width: 1200px) {
@@ -181,6 +189,7 @@ footer span {
         padding: 0;
         border-bottom: none;
         text-align: left;
+		align-items: center;
     }
 
     header nav {
